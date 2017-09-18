@@ -3,6 +3,12 @@
 [![Build Status](https://travis-ci.org/BVLC/caffe.svg?branch=master)](https://travis-ci.org/BVLC/caffe)
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 
+-----------------------------------------------
+
+[CRFasRNN](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) + [BVLC-Caffe](http://caffe.berkeleyvision.org/) = :heart:
+
+-----------------------------------------------
+
 Caffe is a deep learning framework made with expression, speed, and modularity in mind.
 It is developed by Berkeley AI Research ([BAIR](http://bair.berkeley.edu))/The Berkeley Vision and Learning Center (BVLC) and community contributors.
 
