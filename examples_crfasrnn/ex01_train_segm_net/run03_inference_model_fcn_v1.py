@@ -29,6 +29,7 @@ if __name__ == '__main__':
     if not os.path.isdir(dirSnapshots):
         os.makedirs(dirSnapshots)
     #
+    isSaveFig  = True
     isDebug    = False
     isInMemory = False
     isCRFasRNN = False
@@ -87,18 +88,29 @@ if __name__ == '__main__':
         tret = net.forward()['prob']
         tmskPred = np.argsort(-tret[0], axis=0)[0]
 
+        plt.figure(figsize=(8, 6))
         plt.subplot(2, 2, 1)
         plt.imshow(np.mean(timg, axis=0))
         plt.title('image')
+        plt.axis('off')
         plt.subplot(2, 2, 2)
         plt.imshow(tmsk[0])
         plt.title('mask-gt')
+        plt.axis('off')
         plt.subplot(2, 2, 3)
         plt.imshow(tret[0, 1])
         plt.title('mask-predicted')
+        plt.axis('off')
         plt.subplot(2, 2, 4)
-        plt.imshow( np.dstack( (tmsk[0], tmskPred, tmsk[0]) ))
+        plt.imshow(np.dstack((tmsk[0], tmskPred, tmsk[0])))
         plt.title('mask-diff')
-        plt.show()
+        plt.axis('off')
+        # plt.xticks([])
+        # plt.yticks([])
+        if isSaveFig:
+            foutFig = '{}-{}.png'.format(pimg, prefModel)
+            plt.savefig(foutFig)
+        else:
+            plt.show()
         print ('-')
 
