@@ -1,0 +1,7 @@
+*.pyc
+/data/
+/snapshot/
+*.prototxt
+*.prototxt.png
+/snapshots/
+/snapshots_bk/
