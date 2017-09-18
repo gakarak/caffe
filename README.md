@@ -7,6 +7,53 @@
 
 [CRFasRNN](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) + [BVLC-Caffe](http://caffe.berkeleyvision.org/) = :heart:
 
+## Installation
+
+```
+cd $PATH_THIS_REPO/
+mkdir build
+cd build
+cmake ..
+make -j4
+make pycaffe
+make install
+```
+
+to setup your envirinemet with builded **CRFasRNN-Caffe** version you can use [bash-script](examples_crfasrnn/helpers/set-ml-caffe-crfasrnn.sh)
+
+## Dataset
+
+Please, read [quick-dataset-instructions](examples_crfasrnn/datasets/)
+
+## CRFasRNN training pipeline
+
+(1) Prepare train/validation/deploy models-protobuf:
+
+```
+cd $PATH_THIS_REPO/examples_crfasrnn/ex01_train_segm_net
+./start01_generate_models.sh
+```
+
+(2) Pretrain FCN-model, and then finetune CRFasRNN model:
+```
+cd $PATH_THIS_REPO/examples_crfasrnn/ex01_train_segm_net
+./start02_train_model_unet.sh
+./start03_train_model_crfasrnn.sh
+```
+
+(3) Model inference (code sample) [run03_inference_model_fcn_v1.py](examples_crfasrnn/ex01_train_segm_net/run03_inference_model_fcn_v1.py)
+
+
+
+Test CRFasRNN Model Train/Validation/Deploy:
+
+
+![image](examples_crfasrnn/img/model_crfasrnn_trn.prototxt.png)
+
+![image](examples_crfasrnn/img/model_crfasrnn_val.prototxt.png)
+
+![image](examples_crfasrnn/img/model_crfasrnn_dep.prototxt.png)
+
 -----------------------------------------------
 
 Caffe is a deep learning framework made with expression, speed, and modularity in mind.
