@@ -14,7 +14,7 @@ and unpack:
 
 ```
 cd $PATH_TO_THIS_REPO/examples_crfasrnn/datasets
-wget https://yadi.sk/d/BQgDgCXw3Mz5dr
+wget https://yadi.sk/d/BQgDgCXw3Mz5dr -O Carvana_2017_x256.tar
 tar xf Carvana_2017_x256.tar
 ```
 
