@@ -114,9 +114,9 @@ def build_unet(p_pathDataIdx, p_numCls = 2, p_imageSize = 256,
                              weight_filler=dict(type='xavier'))
         net.split_unary, net.split_q0 = L.Split(net.coarse_map, ntop = 2)
         net.crfmap = L.MultiStageMeanfield(net.split_unary, net.split_q0, net.data,
-                                          param = [{'lr_mult': 2}, {'lr_mult': 2}, {'lr_mult': 2}],
+                                          param = [{'lr_mult': 200}, {'lr_mult': 200}, {'lr_mult': 200}],
                                           multi_stage_meanfield_param = {
-                                              'num_iterations': 10,
+                                              'num_iterations': 5,
                                               'compatibility_mode': 0, #POTTS
                                           #     # Initialize the compatilibity transform matrix with a matrix whose diagonal is -1.
                                               'threshold': 2,

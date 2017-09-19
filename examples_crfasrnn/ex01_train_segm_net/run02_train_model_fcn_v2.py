@@ -153,7 +153,7 @@ lr_policy: "fixed"
 type: "Adam"
 
 # Iterations:
-display: 100
+display: 10
 max_iter: {}
 
 test_iter: {}
