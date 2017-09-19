@@ -97,3 +97,6 @@ LOCK
 LOG*
 CURRENT
 MANIFEST-*
+/build_bk/
+/build_cpu/
+/build_gpu/
