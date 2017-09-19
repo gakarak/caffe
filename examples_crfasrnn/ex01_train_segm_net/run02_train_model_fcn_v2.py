@@ -164,6 +164,8 @@ snapshot: {}
 snapshot_prefix: "{}"
 
 solver_mode: GPU
+
+test_initialization: false
     
 """.format(pathProtoTrn, pathProtoVal,
            param_max_iter,
