@@ -5,7 +5,15 @@
 
 -----------------------------------------------
 
-[CRFasRNN](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) + [BVLC-Caffe](http://caffe.berkeleyvision.org/) = :heart:
+[CRFasRNN](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) + [BVLC-Caffe](http://caffe.berkeleyvision.org/)
++ [GPU](https://github.com/hyenal/crfasrnn)= :heart:
+
+## Implementation
+
+- Basic implementation [Caffe-CRFasRNN-CPU](https://github.com/gakarak/caffe/releases/tag/caffe-crfasrnn-cpu) based on original [TorrVision-CRFasRNN code](https://github.com/torrvision/crfasrnn)
+
+- GPU implementation [Caffe-CRFasRNN-GPU](https://github.com/gakarak/caffe/releases/tag/caffe-crfasrnn-gpu) based on 
+[Hyenal-CRFasRNN code](https://github.com/hyenal/crfasrnn) (CUDA implementation of Permutoheral Lattice)
 
 ## Installation
 
