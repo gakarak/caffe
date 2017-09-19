@@ -5,8 +5,7 @@
 
 -----------------------------------------------
 
-[CRFasRNN](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) + [BVLC-Caffe](http://caffe.berkeleyvision.org/)
-+ [GPU](https://github.com/hyenal/crfasrnn)= :heart:
+[CRFasRNN](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) + [BVLC-Caffe](http://caffe.berkeleyvision.org/) + [GPU](https://github.com/hyenal/crfasrnn)= :heart:
 
 ## Implementation
 
