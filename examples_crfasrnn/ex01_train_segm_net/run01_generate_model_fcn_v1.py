@@ -48,6 +48,7 @@ def build_unet(p_pathDataIdx, p_numCls = 2, p_imageSize = 256,
         'img_size':     p_imageSize,
         'batch_size':   p_batchSize,
         'path_idx':     p_pathDataIdx,
+        'num_cls':      p_numCls,
         'is_in_memory': p_isInMemory
     }
     if p_isDeploy:
